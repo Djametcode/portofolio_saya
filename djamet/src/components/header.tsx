@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { TfiMenu } from "react-icons/tfi";
 
 const HeaderComponent = () => {
   const [scroll, setScroll] = useState(0);
@@ -27,11 +28,11 @@ const HeaderComponent = () => {
     }
   }, [scroll]);
   return (
-    <div className={` ${bg} flex p-8`}>
-      <div className=" font-candal font-extrabold text-2xl text-gray-700">
+    <div className={` ${bg} flex max-sm:h-32 max-sm:items-center p-8`}>
+      <div className=" font-candal font-extrabold max-sm:text-4xl text-2xl text-gray-700">
         <h1>DJAMET CODER</h1>
       </div>
-      <div className=" font-figtree text-gray-500 text-xl font-extrabold flex absolute right-10 gap-6">
+      <div className=" max-sm:hidden font-figtree text-gray-500 text-xl font-extrabold flex absolute right-10 gap-6">
         <Link className={`text-black underline underline-offset-4`} to="/">
           Home
         </Link>
@@ -43,6 +44,9 @@ const HeaderComponent = () => {
         {/* <div>
           <button>Dark Mode</button>
         </div> */}
+      </div>
+      <div className=" md:hidden absolute right-8">
+        <TfiMenu size={40} />
       </div>
     </div>
   );

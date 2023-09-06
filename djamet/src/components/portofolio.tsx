@@ -40,7 +40,7 @@ export default function Portofolio() {
     };
   });
   return (
-    <div className=" w-full h-full flex justify-center gap-10 bg-slate-100">
+    <div className=" w-full h-full max-sm:flex-col flex justify-center gap-10 bg-slate-100">
       <div className=" relative bg-slate-50 pt-5 shadow w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg">
         <div className=" flex">
           <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
