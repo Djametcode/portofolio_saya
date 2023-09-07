@@ -38,7 +38,7 @@ export default function App() {
   }, [scroll]);
   return (
     <div className=" h-screen w-screen bg-slate-50">
-      <div>
+      <div className=" fixed top-0 w-full z-40">
         <HeaderComponent />
       </div>
       <Main />

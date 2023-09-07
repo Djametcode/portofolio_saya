@@ -7,13 +7,13 @@ export default function ContactComponents() {
     <div
       className={`${
         isDark ? " bg-black text-white" : "bg-slate-50"
-      } w-full h-full  p-8`}
+      } w-full h-[500px] max-sm:p-2 p-8`}
     >
       <div className=" flex justify-center">
         <form
           className={` ${
             isDark ? "  bg-gray-500 text-black" : "bg-slate-50"
-          }  p-10 rounded-xl font-figtree flex flex-col gap-5 w-[600px] h-[500px]`}
+          } max-sm:p-2  p-10 rounded-xl font-figtree flex flex-col gap-5 max-sm:w-full max-sm:h-full w-[600px] h-[500px]`}
           action="#"
         >
           <div className=" flex gap-5">

@@ -53,7 +53,7 @@ const HeaderComponent = () => {
   }, [scroll]);
   return (
     <div
-      className={` ${bg} fixed top-0 w-full z-40 flex max-sm:h-16 max-sm:p-3 max-sm:items-center p-8`}
+      className={` ${bg} flex max-sm:h-16 max-sm:p-3 max-sm:items-center p-8`}
     >
       <div className=" font-candal max-sm:flex font-extrabold max-sm:text-xl text-2xl text-gray-700">
         <h1>DJAMET CODER</h1>
