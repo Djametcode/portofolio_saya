@@ -5,10 +5,13 @@ import { FaAngleRight, FaAngleLeft, FaGithub, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { DiNodejs } from "react-icons/di";
+import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 export default function Portofolio() {
   const url: string[] = ["/pj1.png", "/pj1-1.png"];
   const [index, setIndex] = useState(0);
+  const isDark = useSelector((state: RootState) => state.dark.value);
 
   const nextImage = () => {
     setIndex(index + 1);
@@ -40,15 +43,23 @@ export default function Portofolio() {
     };
   });
   return (
-    <div className=" w-full h-full max-sm:flex-col flex justify-center gap-10 bg-slate-100">
-      <div className=" relative bg-slate-50 pt-5 shadow w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg">
+    <div
+      className={`w-full h-full max-sm:flex-col flex justify-center gap-10 ${
+        isDark ? "bg-black text-white" : "bg-slate-100"
+      }`}
+    >
+      <div
+        className={` ${
+          isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+        } relative  pt-5 shadow w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
+      >
         <div className=" flex">
-          <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
+          <h1 className=" absolute left-5 text-xl font-extralight font-figtree">
             Nolife Social Media
           </h1>
-          <span className=" absolute right-5">
-            <FaGithub size={25} />
-          </span>
+          <div className=" absolute bg-black rounded-lg text-sm right-5 font-figtree">
+            <button className=" p-2 text-white">visit project</button>
+          </div>
         </div>
         <div className=" relative w-[550px] h-[350px] flex gap-5">
           <img
@@ -78,7 +89,11 @@ export default function Portofolio() {
           </div>
         </div>
       </div>
-      <div className=" relative bg-slate-50 pt-5 shadow w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg">
+      <div
+        className={`  ${
+          isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+        } relative pt-5 shadow w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
+      >
         <div className=" flex">
           <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
             Upcoming Project
