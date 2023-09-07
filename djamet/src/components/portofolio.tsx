@@ -50,6 +50,13 @@ export default function Portofolio() {
     >
       <div
         className={` ${
+          isDark ? "bg-black text-white" : "bg-slate-100"
+        } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold max-sm:pb-5 pb-20 text-center`}
+      >
+        <h1 className=" pb-5">My Portofolio</h1>
+      </div>
+      <div
+        className={` ${
           isDark ? " bg-gray-500 text-white" : "bg-slate-100"
         } relative  pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
       >
@@ -75,8 +82,7 @@ export default function Portofolio() {
               <FaAngleRight size={35} />
             </div>
           </div>
-        </div>
-        <div className=" font-figtree -translate-y-10 max-sm:translate-y-0 max-sm:text-xs text-sm absolute bottom-5 left-5">
+          {/* <div className=" font-figtree -translate-y-10 max-sm:translate-y-0 max-sm:text-xs text-sm ">
           <p>Simple Social Media App. Can do CRUD operation</p>
           <div className=" flex gap-5">
             <p>Built Using : </p>
@@ -87,6 +93,7 @@ export default function Portofolio() {
               <TbBrandNextjs size={20} />
             </div>
           </div>
+        </div> */}
         </div>
       </div>
       <div
@@ -116,9 +123,6 @@ export default function Portofolio() {
               <FaAngleRight size={35} />
             </div>
           </div>
-        </div>
-        <div className=" font-figtree -translate-y-10 text-sm absolute bottom-5 left-5">
-          <p>Upcoming </p>
         </div>
       </div>
     </div>

@@ -42,25 +42,27 @@ export default function App() {
         <HeaderComponent />
       </div>
       <Main />
-      <div
+      {/* <div
         className={` ${
           isDark ? "bg-black text-white" : "bg-slate-50"
         } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold pb-20 text-center`}
       >
         <h1 className=" pb-5">My Portofolio</h1>
         <hr className=" h-4 w-[500px]" />
-      </div>
+      </div> */}
       <Portofolio />
-      <div
+      {/* <div
         className={`${
           isDark ? "bg-black text-white" : "bg-slate-50"
         } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold pb-20 text-center`}
       >
         <h1 className=" pb-5">Contact</h1>
         <hr className=" h-4 w-[500px]" />
-      </div>
+      </div> */}
       <ContactComponents />
-      <div className={`${footer} bottom-0 w-full font-figtree flex gap-5 p-8`}>
+      <div
+        className={`${footer} max-sm:hidden bottom-0 w-full font-figtree flex gap-5 p-8`}
+      >
         <p>&copy; copyright {year}</p>
         <p>Djamet Coder</p>
       </div>
