@@ -7,7 +7,7 @@ export default function ContactComponents() {
     <div
       className={`${
         isDark ? " bg-black text-white" : "bg-slate-100"
-      } w-full h-full max-sm:h-[750px] max-sm:2 p-8`}
+      } w-full h-full max-sm:h-[750px] p-8`}
     >
       {" "}
       <div

@@ -47,7 +47,7 @@ export default function Portofolio() {
       <div
         className={` ${
           isDark ? "bg-black text-white" : "bg-slate-100"
-        } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold max-sm:pb-5 pb-20 text-center`}
+        } flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree p-8 text-2xl font-extrabold max-sm:pb-5 pb-20 text-center`}
       >
         <h1 className=" pb-5">My Portofolio</h1>
       </div>
@@ -58,7 +58,7 @@ export default function Portofolio() {
       >
         <div
           className={` ${
-            isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+            isDark ? " bg-gray-500 text-white" : "bg-slate-50"
           } relative  pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
         >
           <div className=" flex">
@@ -99,7 +99,7 @@ export default function Portofolio() {
         </div>
         <div
           className={`  ${
-            isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+            isDark ? " bg-gray-500 text-white" : "bg-slate-50"
           } relative pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
         >
           <div className=" flex">
