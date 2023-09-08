@@ -6,10 +6,16 @@ export default function IntroduceComponents() {
   return (
     <div
       className={` ${
-        isDark ? "bg-black text-white" : ""
-      } w-full max-sm:h-[600px] max-sm:bg-slate-50 bg-slate-100 h-full flex justify-center items-center`}
+        isDark
+          ? "bg-black text-white max-sm:bg-slate-black"
+          : " bg-slate-100 max-sm:bg-slate-50"
+      } w-full max-sm:h-[600px]  h-full flex justify-center items-center`}
     >
-      <div className=" w-[700px] bg-slate-100 max-sm:m-4 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree">
+      <div
+        className={` ${
+          isDark ? "bg-black text-white" : " bg-slate-100"
+        } w-[700px]  max-sm:m-4 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree`}
+      >
         <p className=" text-lg max-sm:text-base">
           Hello My name is Tofik Hidayat
         </p>

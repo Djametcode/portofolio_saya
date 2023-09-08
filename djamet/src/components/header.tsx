@@ -53,10 +53,10 @@ const HeaderComponent = () => {
   }, [scroll]);
   return (
     <div
-      className={` ${bg} flex max-sm:h-16 max-sm:p-3 max-sm:items-center p-8`}
+      className={` ${bg} flex max-sm:justify-start max-sm:bg-black max-sm:24 max-sm:p-5 max-sm:items-center p-8`}
     >
-      <div className=" font-candal max-sm:flex font-extrabold max-sm:text-xl text-2xl text-gray-700">
-        <h1>DJAMET CODER</h1>
+      <div className=" max-sm:pl-5 font-candal max-sm:flex max-sm:font-extralight font-extrabold max-sm:text-xl text-2xl max-sm:text-white text-gray-700">
+        <h1>Djamet Coder</h1>
       </div>
       <div className=" max-sm:hidden font-figtree text-gray-500 text-xl font-extrabold flex absolute right-10 gap-6">
         <Link className={`${home}`} to="/">
@@ -69,16 +69,22 @@ const HeaderComponent = () => {
           Contact
         </Link>
         <div className=" flex items-center">
-          <input
-            className=" hidden"
-            onClick={darkModeOn}
-            type="checkbox"
-            id="dark"
-          />
+          <input className="" onClick={darkModeOn} type="checkbox" id="dark" />
           <label htmlFor="dark">
             <MdDarkMode size={25} />
           </label>
         </div>
+      </div>
+      <div className=" absolute right-5 text-white">
+        <input
+          className=" hidden"
+          onClick={darkModeOn}
+          type="checkbox"
+          id="dark"
+        />
+        <label htmlFor="dark">
+          <MdDarkMode size={25} />
+        </label>
       </div>
     </div>
   );
