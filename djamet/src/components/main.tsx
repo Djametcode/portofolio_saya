@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
+import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   let initialText = "Hi, I am Tofik";
@@ -30,14 +32,22 @@ export default function Main() {
   return (
     <div
       className={` ${
-        isDark ? "bg-black text-white" : ""
-      } relative flex max-sm:flex-col max-sm:justify-center justify-start max-sm:pl-10 gap-24 max-sm:gap-5 w-full max-sm:h-[700px] h-full max-sm:items-start items-center max-sm:p-3 p-10`}
+        isDark ? "bg-black text-white " : ""
+      } relative flex max-sm:flex-col max-sm:justify-center justify-start max-sm:pl-10 gap-24 max-sm:gap-5 w-full max-sm:h-[500px] h-full max-sm:items-start items-center max-sm:p-3 p-10`}
     >
       <div className=" max-sm:hidden flex flex-col gap-8">
-        <FaGithub size={35} />
-        <FaLinkedin size={35} />
-        <FaInstagram size={35} />
-        <FaTwitter size={35} />
+        <Link className=" cursor-pointer" to={"https://github.com/Djametcode"}>
+          <FaGithub size={35} />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/tofik-hidayat-414140243/"}>
+          <FaLinkedin size={35} />
+        </Link>
+        <Link to={"https://www.instagram.com/hidayattofik_/"}>
+          <FaInstagram size={35} />
+        </Link>
+        <Link to={"https://twitter.com/@HackerMania20"}>
+          <FaTwitter size={35} />
+        </Link>
       </div>
       <div className=" flex flex-col gap-4">
         <h1 className=" font-figtree font-extrabold max-sm:text-3xl text-8xl">

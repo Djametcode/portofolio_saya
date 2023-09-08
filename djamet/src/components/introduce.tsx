@@ -19,8 +19,10 @@ export default function IntroduceComponents() {
     <>
       <div
         className={` ${
-          isDark ? "bg-black text-white" : "bg-slate-100"
-        } translate-y-28 max-sm:translate-y-0 flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree p-8 text-2xl font-extrabold max-sm:pb-5 pb-5 text-center`}
+          isDark
+            ? "bg-black text-white max-sm:rounded-tl-none max-sm:rounded-tr-none"
+            : "bg-slate-50"
+        } translate-y-28 max-sm:translate-y-0 flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree max-sm:p-4 p-8 text-2xl font-extrabold max-sm:pb-4 pb-5 text-center`}
       >
         <h1>About My Self</h1>
       </div>
@@ -29,21 +31,19 @@ export default function IntroduceComponents() {
           isDark
             ? "bg-black text-white max-sm:bg-slate-black"
             : " bg-slate-100 max-sm:bg-slate-50"
-        } w-full max-sm:h-full max-sm:p-5 max-sm:pb-72 h-full max-sm:flex-col flex justify-center gap-10 items-center`}
+        } w-full max-sm:h-full max-sm:w-full max-sm:p-5 p-5 h-full max-sm:flex-col flex justify-center gap-10 items-center`}
       >
         <div
           className={` ${
-            isDark ? "bg-black text-white" : " bg-slate-200"
-          } w-[800px] h-[400px] max-sm:w-full max-sm:h-full  max-sm:m-4 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree`}
+            isDark ? " bg-slate-300 text-black" : " bg-slate-200"
+          } w-[800px] h-[370px] max-sm:w-full max-sm:h-full  max-sm:m-4 max-sm:p-8 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree`}
         >
-          <p className=" text-lg max-sm:text-base">
-            Hello My name is Tofik Hidayat
-          </p>
-          <p className=" text-lg max-sm:text-base">
-            I graduated from Senior High School Negeri 2 Cilacap. My Passion in
-            web development make me learn this all stuff. I love tech and
-            gadget, Watching anime and play game. Hire Me and i will give you
-            everything i got about website development.
+          <p className=" text-lg max-sm:text-base text-justify">
+            Hello, My name is Tofik Hidayat. I graduated from Senior High School
+            Negeri 2 Cilacap. My Passion in web development make me learn this
+            all stuff. I love tech and gadget, Watching anime and play game.
+            Hire Me and i will give you everything i got about website
+            development.
           </p>
           <div>
             <button className=" bg-black text-white max-sm:text-sm p-2 rounded-lg">
@@ -51,7 +51,7 @@ export default function IntroduceComponents() {
             </button>
           </div>
         </div>
-        <div
+        {/* <div
           className={` ${
             isDark ? "bg-black text-white" : " bg-slate-200"
           } w-[800px] h-[400px] max-sm:h-full max-sm:w-full  max-sm:m-4 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree`}
@@ -62,14 +62,22 @@ export default function IntroduceComponents() {
             in pressure. I am well trained person. so thats why you should hire
             me
           </p>
+        </div> */}
+        <div
+          className={` ${
+            isDark
+              ? "bg-black text-white max-sm:rounded-tl-none max-sm:rounded-tr-none"
+              : "bg-slate-50"
+          } translate-y-28 max-sm:translate-y-0 flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree max-sm:p-4 p-8 text-2xl font-extrabold max-sm:pb-4 pb-5 text-center`}
+        >
+          <h1>Skills</h1>
         </div>
         <div
           className={` ${
-            isDark ? "bg-black text-white" : " bg-slate-200"
-          } w-[800px] h-[400px] max-sm:h-full max-sm:w-full  max-sm:m-4 p-10 rounded-xl flex flex-col gap-10 text-lg font-figtree`}
+            isDark ? "bg-slate-300 text-black" : " bg-slate-200"
+          } w-[800px] h-[400px] max-sm:h-full max-sm:w-full  max-sm:m-4 p-10 rounded-xl flex flex-col justify-center gap-10 text-lg font-figtree`}
         >
-          <p>My skill</p>
-          <div className=" grid grid-cols-3  gap-5 place-items-center">
+          <div className=" grid grid-cols-3 gap-10 place-items-center">
             <SiHtml5 size={35} />
             <SiCss3 size={35} />
             <SiJavascript size={35} />

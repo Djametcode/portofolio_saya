@@ -7,6 +7,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { DiNodejs } from "react-icons/di";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
+import { Link } from "react-router-dom";
 
 export default function Portofolio() {
   const url: string[] = ["/pj1.png", "/pj1-1.png"];
@@ -46,14 +47,16 @@ export default function Portofolio() {
     <>
       <div
         className={` ${
-          isDark ? "bg-black text-white" : "bg-slate-100"
-        } flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree p-8 text-2xl font-extrabold max-sm:pb-5 pb-20 text-center`}
+          isDark
+            ? "bg-black text-white max-sm:rounded-tl-none max-sm:rounded-tr-none"
+            : "bg-slate-50"
+        } translate-y-28 max-sm:translate-y-0 flex max-sm:rounded-tl-2xl max-sm:rounded-tr-2xl flex-col items-center font-figtree max-sm:p-4 p-8 text-2xl font-extrabold max-sm:pb-10 pb-5 text-center`}
       >
-        <h1 className=" pb-5">My Portofolio</h1>
+        <h1>Portofolio</h1>
       </div>
       <div
-        className={`w-full h-[650px] max-sm:flex-col flex justify-center max-sm:p-5 gap-10 ${
-          isDark ? "bg-black text-white" : "bg-slate-100"
+        className={`w-full h-[650px] max-sm:flex-col flex justify-center max-sm:p-5 gap-10 max-sm:gap-5 ${
+          isDark ? "bg-black text-white" : " bg-slate-100"
         }`}
       >
         <div
@@ -66,7 +69,9 @@ export default function Portofolio() {
               Nolife Social Media
             </h1>
             <div className=" absolute bg-black rounded-lg text-sm right-5 font-figtree">
-              <button className=" p-2 text-white">visit project</button>
+              <Link to={"http://nolife.vercel.app"} className=" p-2 text-white">
+                visit project
+              </Link>
             </div>
           </div>
           <div className=" relative max-sm:w-full max-sm:h-full w-[550px] h-[350px] flex gap-5">
@@ -103,7 +108,7 @@ export default function Portofolio() {
           } relative pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
         >
           <div className=" flex">
-            <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
+            <h1 className=" absolute left-5 text-xl font-extralight font-figtree">
               Upcoming Project
             </h1>
             <span className=" absolute right-5">
