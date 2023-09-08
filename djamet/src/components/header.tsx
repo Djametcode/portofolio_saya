@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import { TfiMenu } from "react-icons/tfi";
-import {useDispatch} from 'react-redux'
-import {toggleDarkMode} from '../store/slice'
-import {MdDarkMode} from 'react-icons/md'
+import { useDispatch } from "react-redux";
+import { toggleDarkMode } from "../store/slice";
+import { MdDarkMode } from "react-icons/md";
 
 const HeaderComponent = () => {
   const [scroll, setScroll] = useState(0);
@@ -69,13 +69,18 @@ const HeaderComponent = () => {
           Contact
         </Link>
         <div className=" flex items-center">
-          <input className="" onClick={darkModeOn} type="checkbox" id="dark" />
+          <input
+            className=" hidden"
+            onClick={darkModeOn}
+            type="checkbox"
+            id="dark"
+          />
           <label htmlFor="dark">
             <MdDarkMode size={25} />
           </label>
         </div>
       </div>
-      <div className=" absolute right-5 text-white">
+      <div className=" md:hidden absolute right-10 text-white">
         <input
           className=" hidden"
           onClick={darkModeOn}

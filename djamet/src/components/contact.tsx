@@ -20,7 +20,7 @@ export default function ContactComponents() {
       <div className=" flex justify-center">
         <form
           className={` ${
-            isDark ? "  bg-gray-500 text-black" : "bg-slate-50"
+            isDark ? "  bg-gray-500 text-black" : "bg-slate-200"
           } max-sm:p-2  p-10 rounded-xl font-figtree flex flex-col gap-5 max-sm:w-[350px] max-sm:h-[500px] w-[600px] h-[500px]`}
           action="#"
         >
