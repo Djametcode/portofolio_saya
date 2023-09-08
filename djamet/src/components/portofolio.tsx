@@ -43,11 +43,7 @@ export default function Portofolio() {
     };
   });
   return (
-    <div
-      className={`w-full h-full max-sm:flex-col flex justify-center max-sm:p-5 gap-10 ${
-        isDark ? "bg-black text-white" : "bg-slate-100"
-      }`}
-    >
+    <>
       <div
         className={` ${
           isDark ? "bg-black text-white" : "bg-slate-100"
@@ -56,33 +52,38 @@ export default function Portofolio() {
         <h1 className=" pb-5">My Portofolio</h1>
       </div>
       <div
-        className={` ${
-          isDark ? " bg-gray-500 text-white" : "bg-slate-100"
-        } relative  pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
+        className={`w-full h-[650px] max-sm:flex-col flex justify-center max-sm:p-5 gap-10 ${
+          isDark ? "bg-black text-white" : "bg-slate-100"
+        }`}
       >
-        <div className=" flex">
-          <h1 className=" absolute left-5 text-xl font-extralight font-figtree">
-            Nolife Social Media
-          </h1>
-          <div className=" absolute bg-black rounded-lg text-sm right-5 font-figtree">
-            <button className=" p-2 text-white">visit project</button>
-          </div>
-        </div>
-        <div className=" relative max-sm:w-full max-sm:h-full w-[550px] h-[350px] flex gap-5">
-          <img
-            className=" w-full h-full object-contain shadow rounded-lg"
-            src={url[index]}
-            alt=""
-          />
-          <div className=" absolute flex items-center max-sm:w-full max-sm:h-full w-[550px] h-[350px] justify-between">
-            <div onClick={prevImage} className=" cursor-pointer">
-              <FaAngleLeft size={35} />
-            </div>
-            <div onClick={nextImage} className=" cursor-pointer">
-              <FaAngleRight size={35} />
+        <div
+          className={` ${
+            isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+          } relative  pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
+        >
+          <div className=" flex">
+            <h1 className=" absolute left-5 text-xl font-extralight font-figtree">
+              Nolife Social Media
+            </h1>
+            <div className=" absolute bg-black rounded-lg text-sm right-5 font-figtree">
+              <button className=" p-2 text-white">visit project</button>
             </div>
           </div>
-          {/* <div className=" font-figtree -translate-y-10 max-sm:translate-y-0 max-sm:text-xs text-sm ">
+          <div className=" relative max-sm:w-full max-sm:h-full w-[550px] h-[350px] flex gap-5">
+            <img
+              className=" w-full h-full object-contain shadow rounded-lg"
+              src={url[index]}
+              alt=""
+            />
+            <div className=" absolute flex items-center max-sm:w-full max-sm:h-full w-[550px] h-[350px] justify-between">
+              <div onClick={prevImage} className=" cursor-pointer">
+                <FaAngleLeft size={35} />
+              </div>
+              <div onClick={nextImage} className=" cursor-pointer">
+                <FaAngleRight size={35} />
+              </div>
+            </div>
+            {/* <div className=" font-figtree -translate-y-10 max-sm:translate-y-0 max-sm:text-xs text-sm ">
           <p>Simple Social Media App. Can do CRUD operation</p>
           <div className=" flex gap-5">
             <p>Built Using : </p>
@@ -94,37 +95,38 @@ export default function Portofolio() {
             </div>
           </div>
         </div> */}
+          </div>
         </div>
-      </div>
-      <div
-        className={`  ${
-          isDark ? " bg-gray-500 text-white" : "bg-slate-100"
-        } relative pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
-      >
-        <div className=" flex">
-          <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
-            Upcoming Project
-          </h1>
-          <span className=" absolute right-5">
-            <FaGithub size={25} />
-          </span>
-        </div>
-        <div className=" relative max-sm:w-full max-sm:h-full w-[550px] h-[350px] flex gap-5">
-          <img
-            className=" w-full h-full object-contain shadow rounded-lg"
-            src={url[index]}
-            alt=""
-          />
-          <div className=" absolute flex items-center w-[550px] h-[350px] justify-between">
-            <div onClick={prevImage} className=" cursor-pointer">
-              <FaAngleLeft size={35} />
-            </div>
-            <div onClick={nextImage} className=" cursor-pointer">
-              <FaAngleRight size={35} />
+        <div
+          className={`  ${
+            isDark ? " bg-gray-500 text-white" : "bg-slate-100"
+          } relative pt-5 shadow max-sm:w-full max-sm:h-full w-[600px] h-[550px] flex flex-col gap-14 items-center p-4 rounded-lg`}
+        >
+          <div className=" flex">
+            <h1 className=" absolute left-5 text-gray-700 text-xl font-extralight font-figtree">
+              Upcoming Project
+            </h1>
+            <span className=" absolute right-5">
+              <FaGithub size={25} />
+            </span>
+          </div>
+          <div className=" relative max-sm:w-full max-sm:h-full w-[550px] h-[350px] flex gap-5">
+            <img
+              className=" w-full h-full object-contain shadow rounded-lg"
+              src={url[index]}
+              alt=""
+            />
+            <div className=" absolute flex items-center max-sm:w-full max-sm:h-full w-[550px] h-[350px] justify-between">
+              <div onClick={prevImage} className=" cursor-pointer">
+                <FaAngleLeft size={35} />
+              </div>
+              <div onClick={nextImage} className=" cursor-pointer">
+                <FaAngleRight size={35} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

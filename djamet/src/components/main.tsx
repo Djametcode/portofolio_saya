@@ -47,7 +47,7 @@ export default function Main() {
           Fullstack Developer
         </h2>
       </div>
-      <div className=" flex gap-3">
+      <div className=" md:hidden flex gap-3">
         <FaGithub size={25} />
         <FaLinkedin size={25} />
         <FaInstagram size={25} />

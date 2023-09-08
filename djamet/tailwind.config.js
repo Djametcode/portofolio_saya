@@ -11,6 +11,9 @@ export default {
         concert: ["Concert One", "cursive"],
         candal: ["Candal", "sans-serif"],
       },
+      backgroundImage: {
+        person: "url('/bg.png')",
+      },
     },
   },
 };

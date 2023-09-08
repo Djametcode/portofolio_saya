@@ -5,6 +5,7 @@ import Portofolio from "./components/portofolio";
 import ContactComponents from "./components/contact";
 import { useSelector } from "react-redux";
 import { RootState } from "../src/store/store";
+import IntroduceComponents from "./components/introduce";
 
 export default function App() {
   const year = new Date().getFullYear();
@@ -42,23 +43,8 @@ export default function App() {
         <HeaderComponent />
       </div>
       <Main />
-      {/* <div
-        className={` ${
-          isDark ? "bg-black text-white" : "bg-slate-50"
-        } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold pb-20 text-center`}
-      >
-        <h1 className=" pb-5">My Portofolio</h1>
-        <hr className=" h-4 w-[500px]" />
-      </div> */}
+      <IntroduceComponents />
       <Portofolio />
-      {/* <div
-        className={`${
-          isDark ? "bg-black text-white" : "bg-slate-50"
-        } flex flex-col items-center font-figtree p-8 text-2xl font-extrabold pb-20 text-center`}
-      >
-        <h1 className=" pb-5">Contact</h1>
-        <hr className=" h-4 w-[500px]" />
-      </div> */}
       <ContactComponents />
       <div
         className={`${footer} max-sm:hidden bottom-0 w-full font-figtree flex gap-5 p-8`}
