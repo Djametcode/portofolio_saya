@@ -58,10 +58,18 @@ export default function Main() {
         </h2>
       </div>
       <div className=" md:hidden flex gap-3">
-        <FaGithub size={25} />
-        <FaLinkedin size={25} />
-        <FaInstagram size={25} />
-        <FaTwitter size={25} />
+        <Link className=" cursor-pointer" to={"https://github.com/Djametcode"}>
+          <FaGithub size={25} />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/tofik-hidayat-414140243/"}>
+          <FaLinkedin size={25} />
+        </Link>
+        <Link to={"https://www.instagram.com/hidayattofik_/"}>
+          <FaInstagram size={25} />
+        </Link>
+        <Link to={"https://twitter.com/@HackerMania20"}>
+          <FaTwitter size={25} />
+        </Link>
       </div>
     </div>
   );

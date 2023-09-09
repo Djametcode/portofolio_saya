@@ -45,7 +45,9 @@ export default function App() {
       <Main />
       <IntroduceComponents />
       <Portofolio />
-      <ContactComponents />
+      <div className=" md:hidden">
+        <ContactComponents />
+      </div>
       <div
         className={`${footer} max-sm:hidden bottom-0 w-full font-figtree flex gap-5 p-8`}
       >
