@@ -33,7 +33,7 @@ export default function Main() {
     <div
       className={` ${
         isDark ? "bg-black text-white " : ""
-      } relative flex max-sm:flex-col max-sm:justify-center justify-start max-sm:pl-10 gap-24 max-sm:gap-5 w-full max-sm:h-[500px] h-full max-sm:items-start items-center max-sm:p-3 p-10`}
+      } relative flex max-sm:flex-col max-sm:justify-center justify-start max-sm:pl-10 gap-24 max-sm:gap-5 w-full max-sm:h-full h-full max-sm:items-start items-center max-sm:p-3 p-10`}
     >
       <div className=" max-sm:hidden flex flex-col gap-8">
         <Link className=" cursor-pointer" to={"https://github.com/Djametcode"}>
