@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function Main() {
   let initialText = "Hi, I am Tofik";
   const [displayedText, setDisplayedText] = useState<string>("");
-  const isDark = useSelector((state: RootState) => state.dark.value);
+  const isDark = useSelector((state: RootState) => state.dark.isDark);
 
   useEffect(() => {
     let currentIndex = 0;

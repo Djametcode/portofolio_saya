@@ -11,7 +11,7 @@ export default function App() {
   const year = new Date().getFullYear();
   const [scroll, setScroll] = useState(0);
   const [footer, setFooter] = useState("fixed");
-  const isDark = useSelector((state: RootState) => state.dark.value);
+  const isDark = useSelector((state: RootState) => state.dark.isDark);
 
   useEffect(() => {
     const updateScroll = () => {
@@ -38,7 +38,7 @@ export default function App() {
     }
   }, [scroll]);
   return (
-    <div className=" h-screen w-screen bg-slate-50">
+    <div className=" max-w-[2000px] h-screen bg-slate-50">
       <div className=" fixed top-0 w-full z-40">
         <HeaderComponent />
       </div>

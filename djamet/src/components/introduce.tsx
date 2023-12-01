@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 
 export default function IntroduceComponents() {
-  const isDark = useSelector((state: RootState) => state.dark.value);
+  const isDark = useSelector((state: RootState) => state.dark.isDark);
   return (
     <>
       <div

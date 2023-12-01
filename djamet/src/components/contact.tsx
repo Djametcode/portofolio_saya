@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
 
 export default function ContactComponents() {
-  const isDark = useSelector((state: RootState) => state.dark.value);
+  const isDark = useSelector((state: RootState) => state.dark.isDark);
   return (
     <>
       <div

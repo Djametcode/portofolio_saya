@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 export default function Portofolio() {
   const url: string[] = ["/pj1.png", "/pj1-1.png"];
   const [index, setIndex] = useState(0);
-  const isDark = useSelector((state: RootState) => state.dark.value);
+  const isDark = useSelector((state: RootState) => state.dark.isDark);
 
   const nextImage = () => {
     setIndex(index + 1);
@@ -70,7 +70,10 @@ export default function Portofolio() {
                 Nolife Social Media
               </h1>
               <div className=" absolute bg-black p-2 rounded-lg text-sm right-5 font-figtree">
-                <Link to={"http://nolife.vercel.app"} className=" text-white">
+                <Link
+                  to={"http://porto-nolife.vercel.app"}
+                  className=" text-white"
+                >
                   visit project
                 </Link>
               </div>
