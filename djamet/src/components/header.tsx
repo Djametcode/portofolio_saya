@@ -65,7 +65,7 @@ const HeaderComponent = () => {
       </div>
       <div
         className={` 
-        }max-sm:hidden font-figtree  text-xl font-extrabold flex absolute right-10 gap-6`}
+         font-figtree max-sm:hidden text-xl font-extrabold flex absolute right-10 gap-6`}
       >
         <Link className={` ${isDark ? "text-white" : text} ${home}`} to="/">
           Home
