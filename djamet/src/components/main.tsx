@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
-import { Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function Main() {
